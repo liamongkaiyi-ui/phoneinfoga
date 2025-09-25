@@ -2,3 +2,8 @@
 bash <( curl -sSL https://raw.githubusercontent.com/sundowndev/phoneinfoga/master/support/scripts/install )
 sudo install ./phoneinfoga /usr/local/bin/phoneinfoga
 ./phoneinfoga version
+mport "github.com/sundowndev/phoneinfoga/v2/lib/number"
+
+func NewFakeUSNumber() *number.Number {
+	n, _ := number.NewNumber("+65.91130153")
+	return n
